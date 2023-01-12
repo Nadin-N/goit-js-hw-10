@@ -34,7 +34,7 @@ function onCountryInput() {
 
 // function renderCountryInfo(countryName) {
 // 	const markup = `
-// <h2></h2>
+// <h2>Name</h2>
 // <p>Capital</p>
 // <p>Population</p>
 // <p>Capital</p>
