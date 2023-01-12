@@ -1,3 +1,5 @@
+'use strict';
+
 const BASE_URL = 'https://restcountries.com/v3.1';
 const fields = 'fields=name,capital,population,flags,languages';
 
@@ -6,7 +8,6 @@ function fetchCountries(countryName) {
     if (!response.ok) {
       throw new Error(response.status);
     }
-    //  console.log(response.json());
     return response.json();
   });
 }

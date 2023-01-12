@@ -10,11 +10,56 @@ body {
   background-color: #fafafa;
   color: #212121;
   line-height: 1.5;
+  padding: 50px;
+  background-image: linear-gradient(
+    to right,
+    rgba(28, 117, 250, 0.4),
+    rgba(238, 45, 11, 0.4)
+  );
 }
 
 #search-box {
+  display: block;
   font: inherit;
   padding: 8px;
   max-width: 320px;
   margin-bottom: 16px;
+  border-radius: 4px;
+  border: 2px solid rgb(64, 159, 236);
+  transition: border, box-shadow 300ms ease;
+}
+
+#search-box:focus {
+  border: 2px solid rgb(214, 117, 146);
+  outline: none;
+  box-shadow: 0px 0px 20px skyblue;
+}
+
+.country-info p {
+  margin: 0 0 8px;
+  font-size: 24px;
+}
+.country-info p span {
+  font-weight: 500;
+  color: blue;
+}
+.country-info p:first-child span {
+  color: black;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.country-list {
+  padding: 0;
+  list-style: none;
+  font-size: 20px;
+}
+
+.country-list li {
+  display: flex;
+  gap: 20px;
+}
+
+.country-list li:not(:last-child) {
+  margin-bottom: 10px;
 }
