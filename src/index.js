@@ -27,6 +27,7 @@ function onCountryInput(event) {
   const countryName = event.target.value.trim();
 
   if (countryName === '') {
+    clearMarkup();
     return;
   }
 
